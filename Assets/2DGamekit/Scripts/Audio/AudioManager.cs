@@ -59,6 +59,7 @@ public class AudioManager : MonoBehaviour
     private EventInstance enemyFootstepInstance;
 
     [Header("Stingers")]
+    [SerializeField] private EventReference stingerGameOver;
     [SerializeField] private EventReference stingerKeyPickup;
     [SerializeField] private EventReference stingerWeaponPickup;
         
@@ -298,6 +299,15 @@ public class AudioManager : MonoBehaviour
         }
         RuntimeManager.PlayOneShotAttached(doorSwitch, switchObject);
         Debug.Log("Played DoorSwitch");
+    }
+    public void PlayGameOver()
+    {
+        if (stingerGameOver.IsNull)
+        {
+            Debug.LogWarning("Fmod event not found: stingerGameOver");
+            return;
+        }
+        RuntimeManager.PlayOneShot(stingerGameOver);
     }
 
     public void PlayKey(GameObject keyObject)

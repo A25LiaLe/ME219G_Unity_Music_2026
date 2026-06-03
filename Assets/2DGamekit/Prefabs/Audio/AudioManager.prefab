@@ -110,11 +110,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1292304074
+      Data2: 1126056538
+      Data3: 1151903377
+      Data4: -455879747
+    Path: event:/Music/Zone 5
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -173,11 +173,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 350903352
+      Data2: 1186005742
+      Data3: 63301260
+      Data4: 1797679208
+    Path: event:/Music/Zone 1-3
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -298,6 +298,7 @@ Transform:
   m_Children:
   - {fileID: 7188620585383569979}
   - {fileID: 7343739692746708910}
+  - {fileID: 5025466309114102293}
   - {fileID: 5138542554865848846}
   - {fileID: 4782723540720384308}
   - {fileID: 4318290237544591133}
@@ -464,13 +465,20 @@ MonoBehaviour:
       Data3: -564437090
       Data4: -914482641
     Path: event:/Enemies/Enemy_Die
+  stingerGameOver:
+    Guid:
+      Data1: 851797612
+      Data2: 1310072964
+      Data3: -101882239
+      Data4: -118223879
+    Path: event:/Music/Game Over Stinger
   stingerKeyPickup:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1558740141
+      Data2: 1112252571
+      Data3: 1323807423
+      Data4: 653652430
+    Path: event:/Music/Key Stinger
   stingerWeaponPickup:
     Guid:
       Data1: 0
@@ -591,11 +599,74 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 670411072
+      Data2: 1330073320
+      Data3: 651184316
+      Data4: -2139370904
+    Path: event:/Music/Menu
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &6095449464184232002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5025466309114102293}
+  - component: {fileID: 441244288774540318}
+  m_Layer: 0
+  m_Name: Music02
+  m_TagString: Music02
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5025466309114102293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095449464184232002}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4318290237554146966}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441244288774540318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095449464184232002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1212367706
+      Data2: 1268747136
+      Data3: -510495855
+      Data4: 1438302872
+    Path: event:/Music/Zone 4
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0

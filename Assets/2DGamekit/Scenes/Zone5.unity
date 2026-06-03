@@ -1984,6 +1984,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 200126962}
+        m_TargetAssemblyTypeName: AudioEventTrigger, Assembly-CSharp
+        m_MethodName: GenerateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dataSettings:
     dataTag: 
     persistenceType: 0
@@ -2002,8 +2014,8 @@ MonoBehaviour:
   audioSettings:
   - emitter: {fileID: 0}
     tag: MusicBoss
-    action: 3
-    parameter: BossStage
+    action: 1
+    parameter: 
     targetValue: 0
 --- !u!1 &211741460
 GameObject:
@@ -53870,6 +53882,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 531760905}
     m_Modifications:
+    - target: {fileID: 1997227284401166, guid: 4ba44c764bf20fc4c88a7a42dca61256, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4750858373862004, guid: 4ba44c764bf20fc4c88a7a42dca61256, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -69539,13 +69555,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
+      propertyPath: bossMusic
+      value: MusicBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
+        type: 3}
       propertyPath: stage1Value
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
       propertyPath: stage2Value
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
+        type: 3}
+      propertyPath: stage3Value
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
@@ -69555,12 +69581,12 @@ PrefabInstance:
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
       propertyPath: bossDeathValue
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
       propertyPath: stageParameter
-      value: 
+      value: BossStage
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796895, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
