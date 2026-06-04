@@ -31,7 +31,6 @@ TagManager:
   - Metal
   - MusicPause
   - SnapshotPause
-  - PushableBox
   layers:
   - Default
   - TransparentFX
